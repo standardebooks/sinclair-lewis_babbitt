@@ -1,5 +1,6 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
 
 [epub|type~="z3998:letter"] header{
 	text-align: center;
@@ -13,14 +14,16 @@ footer{
 [epub|type~="z3998:salutation"],
 [epub|type~="z3998:signature"]{
 	font-variant: small-caps;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"]{
+	margin-top: 1em;
+	text-align: center;
 }
 
 body [xml|lang]{
 	font-style: italic;
-}
-
-[epub|type~="z3998:acronym"]{
-	font-variant: all-small-caps;
 }
 
 div{
@@ -33,11 +36,6 @@ div{
 div > p > b{
 	text-transform: uppercase;
 	text-aligh: center;
-}
-
-pre{
-	white-space: pre;
-	font-family: monospace;
 }
 
 header{
@@ -53,11 +51,6 @@ header > p > b,
 footer > p > b{
 	text-transform: uppercase;
 	font-weight: bold;
-}
-
-footer{
-	margin: 1em;
-	text-align: right;
 }
 
 footer > p:first-child{
