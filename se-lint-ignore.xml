@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se-lint-ignore>
+	<file path="chapter-4.xhtml">
+		<ignore>
+			<code>t-042</code>
+			<reason>These conjunctions form an expression that requires no punctuation.</reason>
+		</ignore>
+	</file>
+<file path="chapter-6.xhtml">
+		<ignore>
+			<code>t-042</code>
+			<reason>These conjunctions form an expression that requires no punctuation.</reason>
+		</ignore>
+	</file>
+</se-lint-ignore>
