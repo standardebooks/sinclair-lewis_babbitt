@@ -8,7 +8,7 @@
 
 footer{
 	margin-top: 1em;
-	text-align: center;
+	text-align: right;
 }
 
 [epub|type~="z3998:salutation"],
@@ -59,4 +59,10 @@ footer > p:first-child{
 
 footer > p:last-child{
 	margin-top: 1em;
+}
+
+[epub|type~="z3998:postscript"]{
+	margin-top: 1em;
+	text-align: initial;
+	text-indent: 0;
 }
