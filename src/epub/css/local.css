@@ -3,7 +3,7 @@
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
 [epub|type~="z3998:letter"] header{
-	text-align: center;
+	text-align: left;
 }
 
 footer{
@@ -15,6 +15,14 @@ footer{
 [epub|type~="z3998:signature"]{
 	font-variant: small-caps;
 	text-indent: 0;
+}
+
+[epub|type="z3998:sender"]{
+	text-align: right;
+}
+
+[epub|type="z3998:recipient"]{
+	text-align: left;
 }
 
 [epub|type~="z3998:poem"]{
@@ -40,7 +48,7 @@ div > p > b{
 
 header{
 	margin: 1em;
-	text-align: center;
+	text-align: left;
 }
 
 header > p + p{
