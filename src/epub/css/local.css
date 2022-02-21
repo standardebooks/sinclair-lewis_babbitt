@@ -2,8 +2,8 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
-[epub|type~="z3998:letter"] header{
-	text-align: left;
+[epub|type~="z3998:letter"]{
+	text-align: initial;
 }
 
 footer{
@@ -22,7 +22,8 @@ footer{
 }
 
 [epub|type="z3998:recipient"]{
-	text-align: left;
+	text-align: initial;
+	text-indent: 0;
 }
 
 [epub|type~="z3998:poem"]{
@@ -31,22 +32,18 @@ footer{
 }
 
 [epub|type~="z3998:poem"] p{
-	text-align: initial;
+	text-align: center;
 	text-indent: 0;
 }
 
 [epub|type~="z3998:poem"] p > span{
 	display: block;
-	padding-left: 1em;
+	padding-se : 1em;
 	text-indent: -1em;
 }
 
 [epub|type~="z3998:poem"] p > span + br{
 	display: none;
-}
-
-[epub|type~="z3998:poem"] p + p{
-	margin-top: 1em;
 }
 
 body [xml|lang]{
@@ -58,27 +55,16 @@ div{
 	padding: 10px;
 	border: 2px solid black;
 	margin: 0;
+	font-size: .80em;
 }
 
 div > p > b{
 	text-transform: uppercase;
-	text-aligh: center;
 }
 
 header{
 	margin: 1em;
-	text-align: left;
-}
-
-header > p + p{
-	margin-top: .5em;
-}
-
-header > p > b,
-footer > p > b{
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: center;
+	text-align: initial;
 }
 
 footer > p:first-child{
@@ -94,6 +80,7 @@ footer > p:last-child{
 	text-align: initial;
 	text-indent: 0;
 }
+
 figure{
 	break-inside: avoid;
 	margin: 1em auto;
@@ -110,3 +97,12 @@ figure.half-page img{
 	max-width: 50%;
 }
 
+blockquote {
+	font-size: .80em;
+	text-indent: 0;
+}
+
+#para1 {
+	text-align: center;
+	text-indent: 0;
+}
