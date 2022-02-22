@@ -73,7 +73,7 @@
 		<meta property="se:url.authority.nacoaf" refines="#transcriber-2">http://id.loc.gov/authorities/names/no2011017869</meta>
 		<meta property="role" refines="#transcriber-2" scheme="marc:relators">trc</meta>
 		<dc:contributor id="producer-1">Geneviève Ségol</dc:contributor>
-		<meta property="file-as" refines="#producer-1">Ségol, Geneviève </meta>
+		<meta property="file-as" refines="#producer-1">Ségol, Geneviève</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">blw</meta>
 		<meta property="se:role" refines="#producer-1" scheme="marc:relators">cov</meta>

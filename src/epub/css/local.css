@@ -38,7 +38,7 @@ footer{
 
 [epub|type~="z3998:poem"] p > span{
 	display: block;
-	padding-se : 1em;
+	padding-se: 1em;
 	text-indent: -1em;
 }
 
@@ -97,12 +97,12 @@ figure.half-page img{
 	max-width: 50%;
 }
 
-blockquote {
+blockquote{
 	font-size: .80em;
 	text-indent: 0;
 }
 
-#para1 {
+#para1{
 	text-align: center;
 	text-indent: 0;
 }
