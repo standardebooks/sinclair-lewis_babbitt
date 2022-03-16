@@ -51,11 +51,11 @@ body [xml|lang]{
 }
 
 div{
-	width: 300px;
-	padding: 10px;
 	border: 2px solid black;
-	margin: 0;
 	font-size: .80em;
+	margin: 0;
+	padding: 10px;
+	width: 300px;
 }
 
 div > p > b{
