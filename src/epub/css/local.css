@@ -50,18 +50,6 @@ body [xml|lang]{
 	font-style: italic;
 }
 
-div{
-	width: 300px;
-	padding: 10px;
-	border: 2px solid black;
-	margin: 0;
-	font-size: .80em;
-}
-
-div > p > b{
-	text-transform: uppercase;
-}
-
 header{
 	margin: 1em;
 	text-align: initial;
@@ -102,7 +90,7 @@ blockquote{
 	text-indent: 0;
 }
 
-#para1{
-	text-align: center;
-	text-indent: 0;
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
 }
