@@ -12,8 +12,7 @@
 			<reason>These conjunctions form an expression that requires no punctuation.</reason>
 		</ignore>
 	</file>
-
-<file path="chapter-13.xhtml">
+	<file path="chapter-13.xhtml">
 		<ignore>
 			<code>t-042</code>
 			<reason>Neologism that adds a suffix to an abbreviation.</reason>
