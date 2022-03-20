@@ -2,65 +2,44 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
-[epub|type~="z3998:letter"]{
-	text-align: initial;
-}
-
-footer{
-	margin-top: 1em;
-	text-align: right;
-}
-
-[epub|type~="z3998:salutation"],
-[epub|type~="z3998:signature"]{
-	font-variant: small-caps;
-	text-indent: 0;
-}
-
-[epub|type="z3998:sender"]{
-	text-align: right;
-}
-
-[epub|type="z3998:recipient"]{
-	text-align: initial;
-	text-indent: 0;
-}
-
-[epub|type~="z3998:poem"]{
-	margin-top: 1em;
-	text-align: center;
-}
-
-[epub|type~="z3998:poem"] p{
-	text-align: center;
-	text-indent: 0;
-}
-
-[epub|type~="z3998:poem"] p > span{
-	display: block;
-	padding-se: 1em;
-	text-indent: -1em;
-}
-
-[epub|type~="z3998:poem"] p > span + br{
-	display: none;
-}
-
-body [xml|lang]{
+body [xml|lang],
+q{
 	font-style: italic;
 }
 
-header{
-	margin: 1em;
+section{
+	break-after: page;
+}
+
+/* Letter */
+[epub|type~="z3998:letter"] header{
+	text-align: right;
+}
+
+[epub|type~="z3998:letter"] header p + p{
+	margin-top: 1em;
+}
+
+#chapter-3 [epub|type~="z3998:letter"] header > p[epub|type~="se:letter.dateline"]:nth-of-type(2),
+#chapter-3 [epub|type~="z3998:letter"] header > [epub|type~="z3998:salutation"]{
 	text-align: initial;
 }
 
-footer > p:first-child{
-	font-variant: small-caps;
+[epub|type~="z3998:letter"] footer{
+	margin-top: 1em;
+	text-align: right;
 }
 
-footer > p:last-child{
-	margin-top: 1em;
+[epub|type~="z3998:salutation"] + p,
+[epub|type~="z3998:letter"] header + p{
+	text-indent: 0;
+}
+
+[epub|type~="z3998:sender"],
+[epub|type~="z3998:recipient"],
+[epub|type~="z3998:salutation"],
+[epub|type~="z3998:signature"]{
+	font-variant: small-caps;
 }
 
 [epub|type~="z3998:postscript"]{
@@ -68,7 +47,31 @@ footer > p:last-child{
 	text-align: initial;
 	text-indent: 0;
 }
+/* End letter */
 
+/* Poem */
+[epub|type~="z3998:poem"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br{
+	display: none;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+/* End poem */
+
+/* Image */
 figure{
 	break-inside: avoid;
 	margin: 1em auto;
@@ -80,17 +83,95 @@ figure img{
 	margin: auto;
 	max-width: 100%;
 }
+/* End image */
 
-figure.half-page img{
-	max-width: 50%;
+/* Blockquote */
+header,
+footer{
+	margin: 1em;
+	text-align: center;
 }
 
-blockquote{
-	font-size: .80em;
+header p,
+footer p{
 	text-indent: 0;
 }
 
-p span.i1{
-	padding-left: 2em;
-	text-indent: -1em;
+#chapter-4-2 blockquote p:nth-of-type(2){
+	margin: 1em;
+	text-align: center;
+	text-indent: 0;
 }
+
+#chapter-13 header p + p{
+	margin-top: 1em;
+}
+
+#chapter-21 [epub|type~="z3998:signature"]{
+	margin-bottom: 1em;
+	text-align: right;
+}
+/* End blockquote */
+
+/* Large advertisement (chapter 6) */
+#chapter-6-3 > blockquote:first-of-type{
+	margin: 1em 0;
+}
+
+#chapter-6-3 > blockquote:first-of-type > header::before{
+	content: "$ $ $ $ $ $ $ $ $";
+	display: block;
+	font-weight: bold;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+#chapter-6-3 > blockquote:first-of-type > header p + p{
+	margin-top: 1em;
+}
+
+#chapter-6-3 > blockquote:first-of-type header p b,
+#chapter-6-3 > blockquote:first-of-type footer p b{
+	text-transform: uppercase;
+}
+
+#chapter-6-3 footer > p:first-child{
+	font-variant: small-caps;
+}
+
+#chapter-6-3 footer > p:last-child{
+	margin-top: 1em;
+}
+
+#chapter-6-3 footer p > span:first-child{
+	padding-right: 4em;
+}
+
+#chapter-6-3 blockquote blockquote{
+	border: 2px solid;
+	height: auto;
+	margin: 1em;
+	padding: 1em;
+	width: 200px;
+}
+
+#chapter-6-3 blockquote blockquote header{
+	font-variant: small-caps;
+}
+
+#chapter-6-3 blockquote blockquote p{
+	text-indent: 0;
+}
+
+#chapter-6-3 blockquote blockquote:first-of-type{
+	float: left;
+}
+
+#chapter-6-3 blockquote blockquote:last-of-type{
+	float: right;
+}
+
+#chapter-6-3 footer{
+	clear: both;
+}
+/* End large advertisement (chapter 6) */

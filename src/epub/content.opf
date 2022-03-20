@@ -45,7 +45,7 @@
 		<meta property="authority" refines="#subject-4">LCSH</meta>
 		<meta property="term" refines="#subject-4">sh2008107221</meta>
 		<meta property="se:subject">Fiction</meta>
-		<dc:description id="description">A satirical novel about American middle class around 1920.</dc:description>
+		<dc:description id="description">The novel offers a satirical description of the American middle class around 1920.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;George F. Babbitt is a middle-aged realtor, family man, and resident of Zenith, a ficticious midwestern city. His main preoccupation is to climb the social ladder by conforming to the norms of his environment. The novel depicts his daily routines and occasional misadventures in an unorthodox writing style, where the protagonist appears alltogether foolish, funny, and pathetic. This work was both celebrated as an incisive satire of American culture and criticized as an exageration, but ultimately was influential in &lt;a href="https://standardebooks.org/ebooks/sinclair-lewis"&gt;Sinclair Lewis&lt;/a&gt; being awarded the 1930 Nobel Prize in Literature.&lt;/p&gt;
 		</meta>
