@@ -111,19 +111,20 @@ footer p{
 	margin-bottom: 1em;
 	text-align: right;
 }
+
+#chapter-8-2 blockquote{
+	font-style: italic;
+}
 /* End blockquote */
 
 /* Large advertisement (chapter 6) */
 #chapter-6-3 > blockquote:first-of-type{
-	margin: 1em 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 
-#chapter-6-3 > blockquote:first-of-type > header::before{
-	content: "$ $ $ $ $ $ $ $ $";
-	display: block;
+#chapter-6-3 > blockquote:first-of-type > header p:first-of-type{
 	font-weight: bold;
-	margin-bottom: 1em;
-	text-align: center;
 }
 
 #chapter-6-3 > blockquote:first-of-type > header p + p{
@@ -147,27 +148,27 @@ footer p{
 	padding-right: 4em;
 }
 
-#chapter-6-3 blockquote blockquote{
+#chapter-6-3 blockquote div{
 	border: 2px solid;
 	height: auto;
 	margin: 1em;
+	max-width: 12em;
 	padding: 1em;
-	width: 200px;
 }
 
-#chapter-6-3 blockquote blockquote header{
+#chapter-6-3 blockquote div header{
 	font-variant: small-caps;
 }
 
-#chapter-6-3 blockquote blockquote p{
+#chapter-6-3 blockquote div p{
 	text-indent: 0;
 }
 
-#chapter-6-3 blockquote blockquote:first-of-type{
+#chapter-6-3 blockquote div:first-of-type{
 	float: left;
 }
 
-#chapter-6-3 blockquote blockquote:last-of-type{
+#chapter-6-3 blockquote div:last-of-type{
 	float: right;
 }
 
