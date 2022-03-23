@@ -20,7 +20,7 @@ section{
 	margin-top: 1em;
 }
 
-#chapter-3 [epub|type~="z3998:letter"] header > p[epub|type~="se:letter.dateline"]:nth-of-type(2),
+#chapter-3 [epub|type~="z3998:letter"] header > [epub|type~="se:letter.dateline"],
 #chapter-3 [epub|type~="z3998:letter"] header > [epub|type~="z3998:salutation"]{
 	text-align: initial;
 }
