@@ -3,6 +3,12 @@
 	<file path="chapter-4.xhtml">
 		<ignore>
 			<code>t-042</code>
+			<reason>Matched text is not a typo.</reason>
+		</ignore>
+	</file>
+	<file path="chapter-4.xhtml">
+		<ignore>
+			<code>t-042</code>
 			<reason>These conjunctions form an expression that requires no punctuation.</reason>
 		</ignore>
 	</file>
