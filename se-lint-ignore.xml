@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <se-lint-ignore>
-	<file path="chapter-4.xhtml">
+	<file path="chapter-2.xhtml">
 		<ignore>
 			<code>t-042</code>
 			<reason>Matched text is not a typo.</reason>
