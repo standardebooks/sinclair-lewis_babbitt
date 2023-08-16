@@ -2,19 +2,19 @@
 <se-lint-ignore>
 	<file path="chapter-2.xhtml">
 		<ignore>
-			<code>t-042</code>
+			<code>y-001</code>
 			<reason>Matched text is not a typo.</reason>
 		</ignore>
 	</file>
 	<file path="chapter-4.xhtml">
 		<ignore>
-			<code>t-042</code>
+			<code>y-026</code>
 			<reason>These conjunctions form an expression that requires no punctuation.</reason>
 		</ignore>
 	</file>
 	<file path="chapter-6.xhtml">
 		<ignore>
-			<code>t-042</code>
+			<code>y-026</code>
 			<reason>These conjunctions form an expression that requires no punctuation.</reason>
 		</ignore>
 	</file>
@@ -26,7 +26,7 @@
 	</file>
 	<file path="chapter-13.xhtml">
 		<ignore>
-			<code>t-042</code>
+			<code>y-028</code>
 			<reason>Neologism that adds a suffix to an abbreviation.</reason>
 		</ignore>
 	</file>
