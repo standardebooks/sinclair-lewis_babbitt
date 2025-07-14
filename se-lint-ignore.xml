@@ -30,4 +30,10 @@
 			<reason>Neologism that adds a suffix to an abbreviation.</reason>
 		</ignore>
 	</file>
+	<file path="chapter-31.xhtml">
+		<ignore>
+			<code>y-035</code>
+			<reason>Matched text is not a typo.</reason>
+		</ignore>
+	</file>
 </se-lint-ignore>
