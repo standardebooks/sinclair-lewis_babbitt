@@ -20,14 +20,12 @@
 	</file>
 	<file path="chapter-6.xhtml">
 		<ignore>
-			<code>y-026</code>
-			<reason>These conjunctions form an expression that requires no punctuation.</reason>
-		</ignore>
-	</file>
-	<file path="chapter-6.xhtml">
-		<ignore>
 			<code>s-046</code>
 			<reason>This issue is resolved with CSS.</reason>
+		</ignore>
+		<ignore>
+			<code>y-026</code>
+			<reason>These conjunctions form an expression that requires no punctuation.</reason>
 		</ignore>
 	</file>
 	<file path="chapter-13.xhtml">
