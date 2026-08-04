@@ -50,7 +50,7 @@
 		<meta id="collection-1" property="belongs-to-collection">The Guardian’s Best 100 Novels in English (2015)</meta>
 		<meta property="collection-type" refines="#collection-1">set</meta>
 		<meta property="group-position" refines="#collection-1">47</meta>
-		<dc:abstract>The novel offers a satirical description of the American middle class around 1920.</dc:abstract>
+		<meta property="schema:abstract">The novel offers a satirical description of the American middle class around 1920.</meta>
 		<dc:description>
 			&lt;p&gt;George F. Babbitt is a middle-aged realtor, family man, and resident of Zenith, a fictitious Midwestern city. His main preoccupation is to climb the social ladder by conforming to the norms of his environment. The novel depicts his daily routines and occasional misadventures in an unorthodox writing style, where the protagonist appears altogether foolish, funny, and pathetic.&lt;/p&gt;
 			&lt;p&gt;This work was both celebrated as an incisive satire of American culture and criticized as an exaggeration, but was ultimately influential in &lt;a href="https://standardebooks.org/ebooks/sinclair-lewis"&gt;Sinclair Lewis&lt;/a&gt; being awarded the 1930 Nobel Prize in Literature.&lt;/p&gt;
